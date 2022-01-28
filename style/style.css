@@ -1,0 +1,23 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: rgb(255, 241, 241);
+}
+
+.order__form {
+    margin: 50px;
+    border: 2px dotted red;
+    padding: 0px;
+max-width: 50%;
+
+}
+
+.status {
+    display: contents;
+    text-decoration: underline black;
+    font-size: 23px;
+    padding: 0;
+    margin: 100px;
+    border: 1px dotted red;
+    border-radius: 15px;
+}
