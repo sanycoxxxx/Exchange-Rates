@@ -1,5 +1,12 @@
 'use script';
 
+function cons () {
+    console.log('Hello Webpack');
+};
+
+module.exports = cons;
+
+
 const inputMain = document.querySelector('#mainRateInput'),
     inputSecond = document.querySelector('#secondRateInput'),
     massage = {
