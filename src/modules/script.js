@@ -39,6 +39,39 @@ inputMain.addEventListener('input', () => {
 
 });
 
+function showTime () {
+    const now = new Date();
+
+    console.log(now);
+    
+    const year = document.querySelector('.year'),
+    month = document.querySelector('.month'),
+    day = document.querySelector('.day'),
+    hours = document.querySelector('.hours'),
+    minutes = document.querySelector('.minutes'),
+    seconds = document.querySelector('.seconds');
+    
+    console.log(day)
+    
+    function updateClock() {
+        setInterval(showTime, 1000)
+    }
+    
+    year.textContent = now.getFullYear();
+    month.textContent = now.getMonth() + 1;
+    day.textContent = now.getDate();
+    hours.textContent = now.getHours();
+    minutes.textContent = now.getMinutes();
+    seconds.textContent = now.getSeconds();
+
+}
+
+
+function updateClock() {
+    setInterval(showTime, 1000)
+};
+
+updateClock();
 
 
 const forms = document.querySelectorAll('form');
